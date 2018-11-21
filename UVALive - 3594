@@ -1,0 +1,38 @@
+// নিজের কোড হচ্ছে নিজের বাচ্চা ,  AC হইলে যে কি  শান্তি ! 
+// https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=1595
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   char a[260];
+   int sum=0;
+   while(gets(a)){
+
+    if(a[0]=='#') 
+    {
+        return 0;
+
+    }
+    else{
+
+
+         for(int i=0;i<strlen(a);i++)
+         {
+             if(a[i]==' ')
+             {
+                sum+=0;
+             }
+            else
+            {
+                sum+=(a[i]-64)*(i+1);
+            }
+         }
+
+    }
+    cout<<sum<<endl;
+    sum=0;
+   }
+}
