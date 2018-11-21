@@ -1,0 +1,21 @@
+//https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=363
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    double a[15];
+    double sum=0;
+    for(int i=1;i<=12;i++)
+    {
+        cin>>a[i];
+        //sum+=a[i];
+    }
+    for(int i=1;i<=12;i++)
+    {
+        sum=sum+a[i];
+       // sum+=a[i];
+    }
+    cout<<"$"<<sum/12<<endl;
+}
